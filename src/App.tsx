@@ -1,7 +1,3 @@
-import { Button } from "./components/ui/button"
-import { Popover, PopoverAnchor, PopoverTrigger, PopoverContent } from "./components/ui/popover";
-import { Label } from "./components/ui/label";
-import { Input } from "./components/ui/input";
 import { ThemeProvider } from "@/components/theme-provider"
 import LoginPage from "./pages/loginPage";
 import ModeToggle from "./components/ui/modeToggle";

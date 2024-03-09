@@ -1,7 +1,13 @@
 
 import { Separator } from "@/components/ui/separator"
 
-export function Tile({ nome, codigo, ativo }) {
+interface TileProps {
+    nome: string;
+    codigo: string;
+    ativo: boolean;
+}
+
+export function Tile({ nome, codigo, ativo }: TileProps) {
 
     const bg = ativo ? "bg-emerald-700" : "bg-orange-600";
 

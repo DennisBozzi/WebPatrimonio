@@ -22,23 +22,27 @@ function HomePage() {
         );
     }
 
+    if (error) {
+        console.log(error)
+    }
+
     console.log(data.objeto)
+
+    interface Sala {
+        id: number;
+        nome: string;
+        criadoEm: string;
+        ativo: boolean;
+    }
+
 
     return (
         <div className="max-w-7xl mx-auto flex justify-center column flex-wrap gap-2 mt-20">
-            {
-                data.objeto.map((sala) => (
-                    <Tile nome={sala.nome} codigo={sala.criadoEm} ativo={sala.ativo} key={sala.id} />
-                ))
-            }
-
-            {
-                data.objeto.map((sala) => (
-                    <Tile nome={sala.nome} codigo={sala.criadoEm} ativo={sala.ativo} key={sala.id} />
-                ))
-            }
+            {data.objeto.map((sala: Sala) => (
+                <Tile nome={sala.nome} codigo={sala.criadoEm} ativo={sala.ativo} key={sala.id} />
+            ))}
         </div>
-    )
+    );
 
 
 }
