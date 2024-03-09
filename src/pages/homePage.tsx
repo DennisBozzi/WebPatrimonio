@@ -12,7 +12,7 @@ function HomePage() {
 
     if (isLoading) {
         return (
-            <div className="max-w-4xl mx-auto flex items-center column flex-col gap-5 mt-20">
+            <div className="max-w-4xl mx-auto flex items-center column flex-col gap-5">
                 {
                     Array.from({ length: 7 }).map((_, index) => (
                         <SkeletonTiles key={index} />
@@ -37,7 +37,7 @@ function HomePage() {
 
 
     return (
-        <div className="max-w-7xl mx-auto flex justify-center column flex-wrap gap-2 mt-20">
+        <div className="max-w-7xl mx-auto flex justify-center column flex-wrap gap-2">
             {data.objeto.map((sala: Sala) => (
                 <Tile nome={sala.nome} codigo={sala.criadoEm} ativo={sala.ativo} key={sala.id} />
             ))}

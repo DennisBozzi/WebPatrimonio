@@ -1,17 +1,17 @@
-"use client"
 import { Menu } from "lucide-react";
 import { Button } from "../components/ui/button"
 import { Input } from "../components/ui/input"
 import { Label } from "../components/ui/label"
 import { Sheet, SheetClose, SheetContent, SheetDescription, SheetFooter, SheetHeader, SheetTitle, SheetTrigger } from "../components/ui/sheet"
 
-export function SheetSide() {
+export function LeftSheet() {
     return (
-        <div className="grid grid-cols-2 gap-2 fixed left-5">
+        <div className="flex">
 
+            {/* Menu Lateral que abre ao clicar no Burguer Button */}
             <Sheet key={"left"}>
                 <SheetTrigger asChild>
-                    <Button variant="ghost" className="p-0"><Menu width={48}/></Button>
+                    <Button variant="outline" size="icon" className="border-0 md:hidden"><Menu className="h-4 w-4" /></Button>
                 </SheetTrigger>
                 <SheetContent side={"left"}>
                     <SheetHeader>
@@ -41,6 +41,7 @@ export function SheetSide() {
                     </SheetFooter>
                 </SheetContent>
             </Sheet>
+
 
         </div>
     )

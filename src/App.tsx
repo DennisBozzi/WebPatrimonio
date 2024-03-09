@@ -9,20 +9,36 @@ function App() {
 
   return (
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-
       <BrowserRouter>
 
         <Routes>
-
+          
           <Route path="/" element={<LoginPage />} />
-          <Route path="/home" element={<> <NavBar /> <HomePage /> </>} />
+
+        </Routes>
+
+        <Routes>
+
+          <Route path="/home" element={<>
+            <HomePage />
+          </>} />
+
+          <Route path="/patrimonios" element={<>
+
+          </>} />
+
+          <Route path="/cadastroSala" element={<>
+
+          </>} />
+
+          <Route path="/cadastroPatrimonio" element={<>
+
+          </>} />
 
         </Routes>
 
       </BrowserRouter>
-
       <ModeToggle />
-
     </ThemeProvider>
   )
 
