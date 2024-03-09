@@ -9,7 +9,7 @@ function NavBar() {
             <div className="grid gap-8 items-center max-w-lg mx-auto py-2">
 
                 <SheetSide />
-                <img className='mx-auto' src={ceetLogo} width={48} />
+                <img className='mx-auto' src={ceetLogo} width={48} alt="CEET Logo" />
 
             </div>
         </div>)
