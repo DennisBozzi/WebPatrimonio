@@ -9,8 +9,8 @@ function loginPage() {
 
     const navigate = useNavigate()
 
-    const login = () => {
-        navigate('/home')
+    const goTo = (pathname: string) => {
+        navigate('/' + pathname)
     }
 
     return (
@@ -42,7 +42,7 @@ function loginPage() {
                         <CardFooter>
                             <Button className="mx-auto"
                                 id="loginBtn"
-                                onClick={login}>
+                                onClick={() => goTo('home')}>
                                 Confirmar
                             </Button>
                             {/* <Button className="absolute" variant="secondary">Teste</Button> */}
