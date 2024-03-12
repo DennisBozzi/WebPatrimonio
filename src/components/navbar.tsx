@@ -10,26 +10,28 @@ function NavBar() {
     const pathname = location.pathname;
     var name;
 
-    if (pathname == '/home') {
-        name = 'Início'
-    } else if (pathname == '/salas') {
-        name = 'Todas as Salas'
-    } else if (pathname == '/cadastroSala') {
-        name = 'Nova Sala'
-    } else if (pathname == '/patrimonios') {
-        name = 'Todos os Patrimônios'
-    } else if (pathname == '/cadastroPatrimonio') {
-        name = 'Novo Patrimônio'
-    } else if (pathname == '/historico') {
-        name = 'Histórico'
-    } else if (pathname == '/salas') {
+    {
+        if (pathname == '/home') {
+            name = 'Início'
+        } else if (pathname == '/salas') {
+            name = 'Todas as Salas'
+        } else if (pathname == '/cadastroSala') {
+            name = 'Nova Sala'
+        } else if (pathname == '/patrimonios') {
+            name = 'Todos os Patrimônios'
+        } else if (pathname == '/cadastroPatrimonio') {
+            name = 'Novo Patrimônio'
+        } else if (pathname == '/historico') {
+            name = 'Histórico'
+        } else if (pathname == '/salas') {
 
-    } else if (pathname == '/salas') {
+        } else if (pathname == '/salas') {
 
-    } else if (pathname == '/salas') {
+        } else if (pathname == '/salas') {
 
-    } else if (pathname == '/salas') {
+        } else if (pathname == '/salas') {
 
+        }
     }
 
     return (

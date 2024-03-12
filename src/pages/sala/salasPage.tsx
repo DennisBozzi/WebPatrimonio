@@ -2,7 +2,6 @@ import { SkeletonTiles } from "@/components/skeletonTiles"
 import { useQuery } from "react-query";
 import { Tile } from "@/components/tile";
 import axios from "axios";
-import { PaginationSheet } from "@/components/pagination";
 
 function SalasPage() {
 
@@ -35,23 +34,14 @@ function SalasPage() {
     }
 
     return (
-
-        <>
-            <div className="max-w-7xl mx-auto flex justify-center column flex-wrap gap-2">
-                {data.objeto.map((sala: Sala) => (
-                    <Tile nome={sala.nome} codigo={sala.criadoEm} ativo={sala.ativo} key={sala.id} />
-                ))}
-                {data.objeto.map((sala: Sala) => (
-                    <Tile nome={sala.nome} codigo={sala.criadoEm} ativo={sala.ativo} key={sala.id} />
-                ))}
-            </div>
-
-
-        </>
-
+        <div className="max-w-7xl mx-auto flex justify-center column flex-wrap gap-2">
+            {data.objeto.map((sala: Sala) => (
+                <Tile nome={sala.nome} codigo={sala.criadoEm} ativo={sala.ativo} key={sala.id} />
+            ))}
+        </div>
     );
-
 
 }
 
 export default SalasPage;
+

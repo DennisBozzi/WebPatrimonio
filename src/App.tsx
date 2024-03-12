@@ -1,9 +1,10 @@
 import { ThemeProvider } from "@/components/theme-provider"
 import LoginPage from "./pages/loginPage";
 import ModeToggle from "./components/ui/modeToggle";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import SalasPage from "./pages/sala/salasPage";
 import NavBar from "./components/navbar";
+import PatrimoniosPage from "./pages/patrimonio/patrimoniosPage";
 
 function App() {
 
@@ -30,8 +31,7 @@ function App() {
           </>} />
 
           <Route path="/patrimonios" element={<>
-
-
+            <PatrimoniosPage />
           </>} />
 
           <Route path="/cadastroSala" element={<>
